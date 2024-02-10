@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/calculadora.ico" type="image/x-icon">
+    <title>Calculator Age</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;0,900;1,700;1,900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="contaniner">
+        <div class="box-shadow">
+            <div class="section">
+                <h2>The date to enter must be in number.</h2>
+                <div class="flex">
+                    <div class="data-save">
+                        <label for="day">Day</label>
+                        <input type="text" name="" id="day" placeholder="DD">
+                        <label class="visible-day" for="">Must be a valid day</label>
+                    </div>
+                
+                    <div class="data-save">
+                        <label for="month">Month</label>
+                        <input type="text" name="" id="month" placeholder="MM">
+                        <label class="visible-month" for="">Must be a valid mont</label>
+                    </div>
+                
+                    <div class="data-save">
+                        <label for="year">Year</label>
+                        <input type="text" name="" id="year" placeholder="YYYY">
+                        <label class="visible-year" for="">Must be a valid year</label>
+                    </div>
+                </div>
+                <div class="border-botton"></div>
+                <a class="btn-cal" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calculator" width="36" height="36"
+                        viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M4 3m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
+                        <path d="M8 7m0 1a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1v1a1 1 0 0 1 -1 1h-6a1 1 0 0 1 -1 -1z" />
+                        <path d="M8 14l0 .01" />
+                        <path d="M12 14l0 .01" />
+                        <path d="M16 14l0 .01" />
+                        <path d="M8 17l0 .01" />
+                        <path d="M12 17l0 .01" />
+                        <path d="M16 17l0 .01" />
+                    </svg>
+                </a>
+                
+                <div class="result">
+                    <div class="result-block">
+                        <div class="flex-paragraph">
+                            <p id="year-result" class="paragraph-result">--</p>                       
+                            <p class="paragraph-result-data"> years</p>
+                        </div>
+                       <div class="flex-paragraph">
+                         <p id="month-result" class="paragraph-result">--</p>
+                         <p class="paragraph-result-data"> months</p>
+                       </div>
+                        <div class="flex-paragraph">
+                            <p id="day-result" class="paragraph-result">--</p>
+                            <p class="paragraph-result-data"> days</p>
+                        </div>
+                    </div>            
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="js/app.js"></script>
+</html>
